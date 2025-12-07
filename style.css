@@ -1,0 +1,234 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #ffeb3b;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    background: #fff;
+    color: #2196f3;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #2196f3;
+    color: #fff;
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2rem;
+    color: #222;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.skill {
+    background: #2196f3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: #2196f3;
+    margin-bottom: 10px;
+}
+
+/* Certifications */
+.certifications ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.certifications li {
+    background: #eee;
+    margin: 8px auto;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+/* Experience */
+.experience {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    background: #2196f3;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+img {
+    height: 50px;
+    /* keep the size neat */
+    width: 50px;
+    border-radius: 8px;
+    /* rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* subtle shadow */
+    margin: 10px;
+    /* spacing around the image */
+    float: right;
+    /* move image to the right side */
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.full-width {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
